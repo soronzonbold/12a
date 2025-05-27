@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.row {
+display: grid;
+grid-template-columns: auto auto auto auto auto auto;
+gap: 20px;
+}
+.box{
+width: 100px;
+height:100px;
+background-color: red;
+}
+@media screen and (max-width:900px) {
+   .row{
+    grid-template-columns: auto auto auto;
+   }
+    }
+@media screen and (max-width:750px) {
+    .row{
+        grid-template-columns: auto auto ;
+    }
+}
+@media screen and (max-width:600px) {
+    .row{
+        grid-template-columns: auto ;
+    }
+}
+</style>
+<body>
+<div class="row">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+</div>
+
+</body>
+</html>
